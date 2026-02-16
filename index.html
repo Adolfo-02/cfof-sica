@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,6 +40,18 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo-section img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
         }
 
         .logo-section h1 {
@@ -385,6 +398,19 @@
             transform: scale(1.05);
         }
 
+        .poster-image {
+            height: 400px;
+            position: relative;
+        }
+
+        .poster-image img {
+            transition: transform 0.3s ease;
+        }
+
+        .poster-image:hover img {
+            transform: scale(1.02);
+        }
+
         .poster-number {
             font-size: 4rem;
             font-weight: bold;
@@ -564,14 +590,18 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Header -->
     <header>
         <div class="container">
             <div class="header-content">
                 <div class="logo-section">
-                    <h1>🔬 CFO</h1>
-                    <p class="slogan">CFO, fazemos isto por NÓS e para NÓS!</p>
+                    <img src="imagens/CFOlogomarca.png" alt="CFO Logo">
+                    <div>
+                        <h1>CFO</h1>
+                        <p class="slogan">CFO, fazemos isto por NÓS e para NÓS!</p>
+                    </div>
                 </div>
                 <nav>
                     <a href="#sobre">Sobre</a>
@@ -603,17 +633,20 @@
             <div class="card">
                 <div class="icon">🌍</div>
                 <h3>Missão</h3>
-                <p>O CFO é um projeto de divulgação de Física Pura e Aplicada que abrange toda a área da física, desde a física básica até ao estudo avançado das teorias das cordas.</p>
+                <p>O CFO é um projeto de divulgação de Física Pura e Aplicada que abrange toda a área da física, desde a
+                    física básica até ao estudo avançado das teorias das cordas.</p>
             </div>
             <div class="card">
                 <div class="icon">💡</div>
                 <h3>Objetivo</h3>
-                <p>Democratizar o conhecimento em Física através de atividades educacionais gratuitas, acessíveis a todos os interessados em expandir seus conhecimentos científicos.</p>
+                <p>Democratizar o conhecimento em Física através de atividades educacionais gratuitas, acessíveis a
+                    todos os interessados em expandir seus conhecimentos científicos.</p>
             </div>
             <div class="card">
                 <div class="icon">🎯</div>
                 <h3>Abrangência</h3>
-                <p>Oferecemos conteúdo em todas as áreas da física: Física Básica, Mecânica, Termodinâmica, Eletromagnetismo, Relatividade, Mecânica Quântica e muito mais!</p>
+                <p>Oferecemos conteúdo em todas as áreas da física: Física Básica, Mecânica, Termodinâmica,
+                    Eletromagnetismo, Relatividade, Mecânica Quântica e muito mais!</p>
             </div>
         </div>
     </section>
@@ -628,20 +661,23 @@
                     <h3>Minicursos em Física</h3>
                     <p><strong>Status:</strong> Em construção</p>
                     <p><strong>Duração:</strong> 4 sábados | 3-4 horas cada</p>
-                    <p>Cursos completos e estruturados, ideais para aprofundar conhecimentos em áreas específicas da Física. Ministrados por especialistas na área.</p>
+                    <p>Cursos completos e estruturados, ideais para aprofundar conhecimentos em áreas específicas da
+                        Física. Ministrados por especialistas na área.</p>
                 </div>
                 <div class="card">
                     <div class="icon">🎤</div>
                     <h3>Palestras</h3>
                     <p><strong>Frequência:</strong> Quinzenal (Quartas-feiras)</p>
                     <p><strong>Duração:</strong> 1h a 1h30</p>
-                    <p>Palestras com professores universitários e pesquisadores que abordam temas específicos de Física com insights profundos e atualizados.</p>
+                    <p>Palestras com professores universitários e pesquisadores que abordam temas específicos de Física
+                        com insights profundos e atualizados.</p>
                 </div>
                 <div class="card">
                     <div class="icon">🛠️</div>
                     <h3>Workshops</h3>
                     <p>Atividades práticas e interativas para aplicação de conceitos de Física em cenários reais.</p>
-                    <p>Ideal para quem quer experiências hands-on e aprendizado colaborativo com outros entusiastas da Física.</p>
+                    <p>Ideal para quem quer experiências hands-on e aprendizado colaborativo com outros entusiastas da
+                        Física.</p>
                 </div>
             </div>
         </div>
@@ -652,9 +688,10 @@
         <div class="container">
             <h2>📅 Calendário de Palestras 2026</h2>
             <p style="text-align: center; color: #666; margin-bottom: 2rem; font-size: 1.1rem;">
-                Palestras quinzenais às <strong>quartas-feiras</strong> | Duração: <strong>1h a 1h30</strong> | Entrada <strong>GRÁTIS</strong> 🎉
+                Palestras quinzenais às <strong>quartas-feiras</strong> | Duração: <strong>1h a 1h30</strong> | Entrada
+                <strong>GRÁTIS</strong> 🎉
             </p>
-            
+
             <div class="calendar-container">
                 <!-- Fevereiro -->
                 <div class="calendar-month">
@@ -664,11 +701,16 @@
                         <div class="event">
                             <div class="event-date">📅 05 de Fevereiro | ⏰ 19:00 - 20:30</div>
                             <div class="event-title">🔬 Introdução à Física Nuclear</div>
-                            <div style="margin-top: 0.8rem; padding: 0.8rem; background-color: rgba(102, 126, 234, 0.1); border-radius: 5px;">
-                                <div style="font-size: 0.95rem; color: #667eea; font-weight: bold; margin-bottom: 0.3rem;">👨‍🎓 Prof. Dr. Carlos Silva</div>
-                                <div style="font-size: 0.85rem; color: #666;">📚 Formação: Doutorado em Física Nuclear - USP</div>
+                            <div
+                                style="margin-top: 0.8rem; padding: 0.8rem; background-color: rgba(102, 126, 234, 0.1); border-radius: 5px;">
+                                <div
+                                    style="font-size: 0.95rem; color: #667eea; font-weight: bold; margin-bottom: 0.3rem;">
+                                    👨‍🎓 Prof. Dr. Carlos Silva</div>
+                                <div style="font-size: 0.85rem; color: #666;">📚 Formação: Doutorado em Física Nuclear -
+                                    USP</div>
                                 <div style="font-size: 0.85rem; color: #666;">🎯 Área: Física Nuclear e Partículas</div>
-                                <div style="font-size: 0.9rem; color: #764ba2; margin-top: 0.5rem; font-style: italic;">Conceitos fundamentais, aplicações e pesquisa atual na área</div>
+                                <div style="font-size: 0.9rem; color: #764ba2; margin-top: 0.5rem; font-style: italic;">
+                                    Conceitos fundamentais, aplicações e pesquisa atual na área</div>
                             </div>
                         </div>
 
@@ -676,11 +718,17 @@
                         <div class="event">
                             <div class="event-date">📅 19 de Fevereiro | ⏰ 19:00 - 20:30</div>
                             <div class="event-title">⚛️ Reações Nucleares e Barreira de Coulomb</div>
-                            <div style="margin-top: 0.8rem; padding: 0.8rem; background-color: rgba(102, 126, 234, 0.1); border-radius: 5px;">
-                                <div style="font-size: 0.95rem; color: #667eea; font-weight: bold; margin-bottom: 0.3rem;">👨‍🔬 Prof. Dr. Adolfo Chitula Chinhama</div>
-                                <div style="font-size: 0.85rem; color: #666;">📚 Formação: Licenciatura em Física (FCN-UAN, Angola) | Mestrado em Física (PPG-fisicaunifesp, Brasil)</div>
-                                <div style="font-size: 0.85rem; color: #666;">🎯 Área: Física Nuclear - Sistema 10B+9Be</div>
-                                <div style="font-size: 0.9rem; color: #764ba2; margin-top: 0.5rem; font-style: italic;">Investigação de mecanismos de reações acima da barreira de potencial</div>
+                            <div
+                                style="margin-top: 0.8rem; padding: 0.8rem; background-color: rgba(102, 126, 234, 0.1); border-radius: 5px;">
+                                <div
+                                    style="font-size: 0.95rem; color: #667eea; font-weight: bold; margin-bottom: 0.3rem;">
+                                    👨‍🔬 Prof. Dr. Adolfo Chitula Chinhama</div>
+                                <div style="font-size: 0.85rem; color: #666;">📚 Formação: Licenciatura em Física
+                                    (FCN-UAN, Angola) | Mestrado em Física (PPG-fisicaunifesp, Brasil)</div>
+                                <div style="font-size: 0.85rem; color: #666;">🎯 Área: Física Nuclear - Sistema 10B+9Be
+                                </div>
+                                <div style="font-size: 0.9rem; color: #764ba2; margin-top: 0.5rem; font-style: italic;">
+                                    Investigação de mecanismos de reações acima da barreira de potencial</div>
                             </div>
                         </div>
                     </div>
@@ -694,11 +742,17 @@
                         <div class="event">
                             <div class="event-date">📅 05 de Março | ⏰ 19:00 - 20:30</div>
                             <div class="event-title">🌌 Mecânica Quântica Aplicada</div>
-                            <div style="margin-top: 0.8rem; padding: 0.8rem; background-color: rgba(102, 126, 234, 0.1); border-radius: 5px;">
-                                <div style="font-size: 0.95rem; color: #667eea; font-weight: bold; margin-bottom: 0.3rem;">👩‍🎓 Profa. Dra. Marina Santos</div>
-                                <div style="font-size: 0.85rem; color: #666;">📚 Formação: Doutorado em Física Quântica - UNICAMP</div>
-                                <div style="font-size: 0.85rem; color: #666;">🎯 Área: Mecânica Quântica e suas Aplicações Tecnológicas</div>
-                                <div style="font-size: 0.9rem; color: #764ba2; margin-top: 0.5rem; font-style: italic;">Princípios quânticos em computação, fotônica e nanotecnologia</div>
+                            <div
+                                style="margin-top: 0.8rem; padding: 0.8rem; background-color: rgba(102, 126, 234, 0.1); border-radius: 5px;">
+                                <div
+                                    style="font-size: 0.95rem; color: #667eea; font-weight: bold; margin-bottom: 0.3rem;">
+                                    👩‍🎓 Profa. Dra. Marina Santos</div>
+                                <div style="font-size: 0.85rem; color: #666;">📚 Formação: Doutorado em Física Quântica
+                                    - UNICAMP</div>
+                                <div style="font-size: 0.85rem; color: #666;">🎯 Área: Mecânica Quântica e suas
+                                    Aplicações Tecnológicas</div>
+                                <div style="font-size: 0.9rem; color: #764ba2; margin-top: 0.5rem; font-style: italic;">
+                                    Princípios quânticos em computação, fotônica e nanotecnologia</div>
                             </div>
                         </div>
 
@@ -706,11 +760,17 @@
                         <div class="event">
                             <div class="event-date">📅 19 de Março | ⏰ 19:00 - 20:30</div>
                             <div class="event-title">🚀 Relatividade Geral e Cosmologia</div>
-                            <div style="margin-top: 0.8rem; padding: 0.8rem; background-color: rgba(102, 126, 234, 0.1); border-radius: 5px;">
-                                <div style="font-size: 0.95rem; color: #667eea; font-weight: bold; margin-bottom: 0.3rem;">👨‍🎓 Prof. Dr. João Oliveira</div>
-                                <div style="font-size: 0.85rem; color: #666;">📚 Formação: Doutorado em Astrofísica - Observatório Nacional</div>
-                                <div style="font-size: 0.85rem; color: #666;">🎯 Área: Cosmologia, Relatividade Geral e Gravitação</div>
-                                <div style="font-size: 0.9rem; color: #764ba2; margin-top: 0.5rem; font-style: italic;">Universo, gravitação e estrutura espaço-temporal</div>
+                            <div
+                                style="margin-top: 0.8rem; padding: 0.8rem; background-color: rgba(102, 126, 234, 0.1); border-radius: 5px;">
+                                <div
+                                    style="font-size: 0.95rem; color: #667eea; font-weight: bold; margin-bottom: 0.3rem;">
+                                    👨‍🎓 Prof. Dr. João Oliveira</div>
+                                <div style="font-size: 0.85rem; color: #666;">📚 Formação: Doutorado em Astrofísica -
+                                    Observatório Nacional</div>
+                                <div style="font-size: 0.85rem; color: #666;">🎯 Área: Cosmologia, Relatividade Geral e
+                                    Gravitação</div>
+                                <div style="font-size: 0.9rem; color: #764ba2; margin-top: 0.5rem; font-style: italic;">
+                                    Universo, gravitação e estrutura espaço-temporal</div>
                             </div>
                         </div>
                     </div>
@@ -718,16 +778,20 @@
             </div>
 
             <!-- Resumo de Áreas -->
-            <div style="margin-top: 3rem; padding: 2rem; background: linear-gradient(135deg, #f0f4ff 0%, #e8ecff 100%); border-radius: 10px;">
+            <div
+                style="margin-top: 3rem; padding: 2rem; background: linear-gradient(135deg, #f0f4ff 0%, #e8ecff 100%); border-radius: 10px;">
                 <h3 style="color: #667eea; margin-bottom: 1.5rem; text-align: center;">🎯 Áreas do Saber Abordadas</h3>
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
                     <div style="padding: 1rem; background: white; border-left: 4px solid #667eea; border-radius: 5px;">
                         <div style="font-weight: bold; color: #667eea; margin-bottom: 0.5rem;">⚛️ Física Nuclear</div>
-                        <div style="font-size: 0.9rem; color: #666;">Reações nucleares, partículas elementares e aplicações</div>
+                        <div style="font-size: 0.9rem; color: #666;">Reações nucleares, partículas elementares e
+                            aplicações</div>
                     </div>
                     <div style="padding: 1rem; background: white; border-left: 4px solid #764ba2; border-radius: 5px;">
-                        <div style="font-weight: bold; color: #764ba2; margin-bottom: 0.5rem;">🌌 Mecânica Quântica</div>
-                        <div style="font-size: 0.9rem; color: #666;">Teoria quântica e aplicações tecnológicas modernas</div>
+                        <div style="font-weight: bold; color: #764ba2; margin-bottom: 0.5rem;">🌌 Mecânica Quântica
+                        </div>
+                        <div style="font-size: 0.9rem; color: #666;">Teoria quântica e aplicações tecnológicas modernas
+                        </div>
                     </div>
                     <div style="padding: 1rem; background: white; border-left: 4px solid #2a5298; border-radius: 5px;">
                         <div style="font-weight: bold; color: #2a5298; margin-bottom: 0.5rem;">🚀 Cosmologia</div>
@@ -745,69 +809,104 @@
             <p style="text-align: center; color: #666; margin-bottom: 2rem; font-size: 1.1rem;">
                 Compartilhe nossos cartazes nas redes sociais e divulgue o CFO!
             </p>
-            
+
             <div class="posters-container">
                 <!-- Cartaz 1 -->
                 <div class="poster" onclick="downloadPoster(1)">
                     <div class="poster-number">🔬</div>
                     <div class="poster-text">CFO</div>
                     <div class="poster-desc">Centro Online de Física</div>
-                    <div class="poster-desc" style="font-size: 0.95rem; margin-top: 1rem;">Divulgação de Física Pura e Aplicada</div>
-                    <button class="poster-button" onclick="downloadPoster(1); event.stopPropagation();">Compartilhar</button>
+                    <div class="poster-desc" style="font-size: 0.95rem; margin-top: 1rem;">Divulgação de Física Pura e
+                        Aplicada</div>
+                    <button class="poster-button"
+                        onclick="downloadPoster(1); event.stopPropagation();">Compartilhar</button>
                 </div>
 
                 <!-- Cartaz 2 -->
-                <div class="poster" style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);" onclick="downloadPoster(2)">
+                <div class="poster" style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);"
+                    onclick="downloadPoster(2)">
                     <div class="poster-number">📚</div>
                     <div class="poster-text">Minicursos</div>
                     <div class="poster-desc">4 Sábados de Imersão</div>
                     <div class="poster-desc" style="font-size: 0.95rem;">3-4 horas cada sessão</div>
-                    <button class="poster-button" onclick="downloadPoster(2); event.stopPropagation();">Compartilhar</button>
+                    <button class="poster-button"
+                        onclick="downloadPoster(2); event.stopPropagation();">Compartilhar</button>
                 </div>
 
                 <!-- Cartaz 3 -->
-                <div class="poster" style="background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);" onclick="downloadPoster(3)">
+                <div class="poster" style="background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);"
+                    onclick="downloadPoster(3)">
                     <div class="poster-number">🎤</div>
                     <div class="poster-text">Palestras</div>
                     <div class="poster-desc">Quinzenalmente | Quartas-feiras</div>
                     <div class="poster-desc" style="font-size: 0.95rem;">Com Pesquisadores e Professores</div>
-                    <button class="poster-button" onclick="downloadPoster(3); event.stopPropagation();">Compartilhar</button>
+                    <button class="poster-button"
+                        onclick="downloadPoster(3); event.stopPropagation();">Compartilhar</button>
                 </div>
 
                 <!-- Cartaz 4 -->
-                <div class="poster" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);" onclick="downloadPoster(4)">
+                <div class="poster" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"
+                    onclick="downloadPoster(4)">
                     <div class="poster-number">💡</div>
                     <div class="poster-text">Grátis!</div>
                     <div class="poster-desc">Todas as atividades são gratuitas</div>
                     <div class="poster-desc" style="font-size: 0.95rem;">Sem taxas, sem pegadinhas</div>
-                    <button class="poster-button" onclick="downloadPoster(4); event.stopPropagation();">Compartilhar</button>
+                    <button class="poster-button"
+                        onclick="downloadPoster(4); event.stopPropagation();">Compartilhar</button>
                 </div>
 
                 <!-- Cartaz 5 -->
-                <div class="poster" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);" onclick="downloadPoster(5)">
+                <div class="poster" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"
+                    onclick="downloadPoster(5)">
                     <div class="poster-number">🌟</div>
                     <div class="poster-text">Siga-nos</div>
                     <div class="poster-desc">Canal WhatsApp Oficial</div>
-                    <div class="poster-desc" style="font-size: 0.85rem; margin-top: 0.5rem;">Notícias, Eventos e Oportunidades</div>
-                    <button class="poster-button" onclick="downloadPoster(5); event.stopPropagation();">Compartilhar</button>
+                    <div class="poster-desc" style="font-size: 0.85rem; margin-top: 0.5rem;">Notícias, Eventos e
+                        Oportunidades</div>
+                    <button class="poster-button"
+                        onclick="downloadPoster(5); event.stopPropagation();">Compartilhar</button>
                 </div>
 
                 <!-- Cartaz 6 - Slogan -->
-                <div class="poster" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);" onclick="downloadPoster(6)">
+                <div class="poster" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"
+                    onclick="downloadPoster(6)">
                     <div style="font-size: 2.5rem; margin-bottom: 1rem;">🚀</div>
                     <div class="poster-text" style="font-size: 1.5rem;">CFO</div>
-                    <div class="poster-desc" style="font-size: 1.1rem; margin-top: 1rem; font-weight: bold;">Fazemos isto por NÓS e para NÓS!</div>
-                    <button class="poster-button" onclick="downloadPoster(6); event.stopPropagation();">Compartilhar</button>
+                    <div class="poster-desc" style="font-size: 1.1rem; margin-top: 1rem; font-weight: bold;">Fazemos
+                        isto por NÓS e para NÓS!</div>
+                    <button class="poster-button"
+                        onclick="downloadPoster(6); event.stopPropagation();">Compartilhar</button>
                 </div>
 
                 <!-- Cartaz 7 - Michele Lara -->
-                <div class="poster" style="background: linear-gradient(135deg, #2d5298 0%, #1e3c72 100%);" onclick="downloadPoster(7)">
-                    <div style="font-size: 1.2rem; margin-bottom: 0.5rem; font-weight: bold;">📢 CFO Apresenta</div>
-                    <div class="poster-text" style="font-size: 1.3rem;">Michele Lara</div>
-                    <div class="poster-desc" style="font-size: 0.9rem; margin: 0.5rem 0;">🎤 Comunicadora</div>
-                    <div class="poster-desc" style="font-size: 0.85rem; line-height: 1.4;">Diálogos entre Psicanálise, Espiritualidade e Ciência</div>
-                    <div class="poster-desc" style="font-size: 0.8rem; margin-top: 0.5rem; color: #ffd700;">📅 22 de Outubro | 20h Angola</div>
-                    <button class="poster-button" onclick="downloadPoster(7); event.stopPropagation();">Compartilhar</button>
+                <div class="poster poster-image" style="padding: 0; overflow: hidden;" onclick="downloadPoster(7)">
+                    <img src="imagens/Michele-Lara.png" alt="Michele Lara - Comunicação como Reveladora do Inconsciente"
+                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                </div>
+
+                <!-- Cartaz 8 - Marlete de Assunção -->
+                <div class="poster poster-image" style="padding: 0; overflow: hidden;" onclick="downloadPoster(8)">
+                    <img src="imagens/Marlete-Assuncao.png" alt="Marlete de Assunção - Mulheres na Ciência"
+                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                </div>
+
+                <!-- Cartaz 9 - Leonardo Sioufi -->
+                <div class="poster poster-image" style="padding: 0; overflow: hidden;" onclick="downloadPoster(9)">
+                    <img src="imagens/Leonardo-Sioufi.png" alt="Leonardo Sioufi - Dos Templos para as Universidades"
+                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                </div>
+
+                <!-- Cartaz 10 - Ronaldo Savarino -->
+                <div class="poster poster-image" style="padding: 0; overflow: hidden;" onclick="downloadPoster(10)">
+                    <img src="imagens/Ronaldo-Savarino.png" alt="Ronaldo Savarino - Astrofísica Estelar"
+                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                </div>
+
+                <!-- Cartaz 11 - Psar Serghei - Nanotecnologia -->
+                <div class="poster poster-image" style="padding: 0; overflow: hidden;" onclick="downloadPoster(11)">
+                    <img src="imagens/Psar-Serghei-Nanotecnologia.png"
+                        alt="Prof. Dr. Psar Serghei - Nanotecnologia: O futuro no presente"
+                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
                 </div>
             </div>
         </div>
@@ -817,12 +916,13 @@
     <section id="relatorios" style="padding: 4rem 0; background-color: #f9f9f9;">
         <div class="container">
             <h2>📊 Relatórios Científicos</h2>
-            
+
             <!-- Header dos Relatórios -->
             <div class="reports-header">
                 <div class="momentum-badge">🤝 Em Parceria com Momentum Physicae</div>
                 <h3>Publicações Científicas Após Cada Palestra</h3>
-                <p>Após cada palestra realizada no CFO, é produzido e disponibilizado um relatório científico detalhado pela Momentum Physicae, garantindo a documentação e disseminação do conhecimento abordado.</p>
+                <p>Após cada palestra realizada no CFO, é produzido e disponibilizado um relatório científico detalhado
+                    pela Momentum Physicae, garantindo a documentação e disseminação do conhecimento abordado.</p>
             </div>
 
             <!-- Relatório 1 - Profa. Dra. Marlete -->
@@ -850,12 +950,16 @@
                             <div class="detail-value">Física Nuclear e História</div>
                         </div>
                     </div>
-                    
+
                     <div class="report-description">
-                        <strong>Tema:</strong> Uma exploração fascinante sobre as contribuições históricas das mulheres na ciência e sua importância muitas vezes negligenciada na história da civilização. A palestra aborda a vida, obra e impacto de científicas e pesquisadoras que marcaram a história da física nuclear e outras disciplinas.
+                        <strong>Tema:</strong> Uma exploração fascinante sobre as contribuições históricas das mulheres
+                        na ciência e sua importância muitas vezes negligenciada na história da civilização. A palestra
+                        aborda a vida, obra e impacto de científicas e pesquisadoras que marcaram a história da física
+                        nuclear e outras disciplinas.
                     </div>
 
-                    <a href="relatóriocfomarlete.pdf" class="download-button" download="Marlete-Assuncao-Mulheres-na-Ciencia.pdf">
+                    <a href="relatóriocfomarlete.pdf" class="download-button"
+                        download="Marlete-Assuncao-Mulheres-na-Ciencia.pdf">
                         📥 Baixar Relatório Científico (PDF)
                     </a>
                 </div>
@@ -886,12 +990,15 @@
                             <div class="detail-value">Física Nuclear</div>
                         </div>
                     </div>
-                    
+
                     <div class="report-description">
-                        <strong>Tema:</strong> Investigação profunda dos mecanismos de reações nucleares do sistema 10B+9Be acima da barreira de potencial de Coulomb, incluindo explicações sobre a física envolvida, metodologias de pesquisa e implicações para a ciência nuclear moderna.
+                        <strong>Tema:</strong> Investigação profunda dos mecanismos de reações nucleares do sistema
+                        10B+9Be acima da barreira de potencial de Coulomb, incluindo explicações sobre a física
+                        envolvida, metodologias de pesquisa e implicações para a ciência nuclear moderna.
                     </div>
 
-                    <a href="relatóriocfomarlete.pdf" class="download-button" download="Adolfo-Chinhama-Reacoes-Nucleares.pdf">
+                    <a href="relatóriocfomarlete.pdf" class="download-button"
+                        download="Adolfo-Chinhama-Reacoes-Nucleares.pdf">
                         📥 Baixar Relatório Científico (PDF)
                     </a>
                 </div>
@@ -922,12 +1029,15 @@
                             <div class="detail-value">Psicanálise, Espiritualidade e Ciência</div>
                         </div>
                     </div>
-                    
+
                     <div class="report-description">
-                        <strong>Tema:</strong> Diálogos entre Psicanálise, Espiritualidade e Ciência. Uma perspectiva inovadora sobre como a comunicação atua como reveladora do inconsciente, explorando as intersecções entre diferentes campos do conhecimento e a compreensão da psique humana.
+                        <strong>Tema:</strong> Diálogos entre Psicanálise, Espiritualidade e Ciência. Uma perspectiva
+                        inovadora sobre como a comunicação atua como reveladora do inconsciente, explorando as
+                        intersecções entre diferentes campos do conhecimento e a compreensão da psique humana.
                     </div>
 
-                    <a href="relatóriomichelelaracfo.pdf" class="download-button" download="Michele-Lara-Comunicacao-Inconsciente.pdf">
+                    <a href="relatóriomichelelaracfo.pdf" class="download-button"
+                        download="Michele-Lara-Comunicacao-Inconsciente.pdf">
                         📥 Baixar Relatório Científico (PDF)
                     </a>
                 </div>
@@ -958,25 +1068,34 @@
                             <div class="detail-value">Física Nuclear Aplicada</div>
                         </div>
                     </div>
-                    
+
                     <div class="report-description">
-                        <strong>Tema:</strong> Exploração das aplicações práticas da física nuclear na medicina, energia e pesquisa científica. A palestra aborda desde os fundamentos até as tecnologias de ponta utilizadas em laboratórios de pesquisa ao redor do mundo, destacando o papel crucial da física nuclear na sociedade contemporânea.
+                        <strong>Tema:</strong> Exploração das aplicações práticas da física nuclear na medicina, energia
+                        e pesquisa científica. A palestra aborda desde os fundamentos até as tecnologias de ponta
+                        utilizadas em laboratórios de pesquisa ao redor do mundo, destacando o papel crucial da física
+                        nuclear na sociedade contemporânea.
                     </div>
 
-                    <a href="relatóriomichelelaracfo.pdf" class="download-button" download="Michele-Lara-Fisica-Nuclear-Aplicacoes.pdf">
+                    <a href="relatóriomichelelaracfo.pdf" class="download-button"
+                        download="Michele-Lara-Fisica-Nuclear-Aplicacoes.pdf">
                         📥 Baixar Relatório Científico (PDF)
                     </a>
                 </div>
             </div>
 
             <!-- Informação sobre Momentum Physicae -->
-            <div style="margin-top: 3rem; padding: 2rem; background: white; border-radius: 10px; border-left: 5px solid #667eea;">
+            <div
+                style="margin-top: 3rem; padding: 2rem; background: white; border-radius: 10px; border-left: 5px solid #667eea;">
                 <h3 style="color: #667eea; margin-bottom: 1rem;">📋 Sobre Momentum Physicae</h3>
                 <p style="color: #666; line-height: 1.8;">
-                    <strong>Momentum Physicae</strong> é a entidade responsável pela produção e disponibilização dos relatórios científicos após cada palestra do CFO. Com foco em documentação rigorosa e disseminação do conhecimento científico, garante que todo conteúdo abordado nas palestras seja registrado em formato acadêmico de qualidade, acessível a toda comunidade interessada.
+                    <strong>Momentum Physicae</strong> é a entidade responsável pela produção e disponibilização dos
+                    relatórios científicos após cada palestra do CFO. Com foco em documentação rigorosa e disseminação
+                    do conhecimento científico, garante que todo conteúdo abordado nas palestras seja registrado em
+                    formato acadêmico de qualidade, acessível a toda comunidade interessada.
                 </p>
                 <p style="color: #666; margin-top: 1rem; font-style: italic;">
-                    Todos os relatórios são produzidos com rigor científico e disponibilizados gratuitamente, mantendo o compromisso do CFO com a democratização da educação em Física.
+                    Todos os relatórios são produzidos com rigor científico e disponibilizados gratuitamente, mantendo o
+                    compromisso do CFO com a democratização da educação em Física.
                 </p>
             </div>
         </div>
@@ -988,20 +1107,24 @@
             <h2>Nosso Mentor</h2>
             <div class="mentor-content">
                 <div style="text-align: center;">
-                    <img src="Adolfo.jpeg" alt="Prof. Adolfo Chitula Chinhama" style="width: 250px; height: 250px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); object-fit: cover;">
+                    <img src="Adolfo.jpeg" alt="Prof. Adolfo Chitula Chinhama"
+                        style="width: 250px; height: 250px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); object-fit: cover;">
                 </div>
                 <div class="mentor-info">
                     <h3>Adolfo Chitula Chinhama</h3>
                     <p><strong>Especialidade:</strong> Físico Nuclear</p>
                     <p><strong>Formação:</strong></p>
                     <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
-                        <li>Licenciatura em Física - Faculdade de Ciências Naturais da Universidade Agostinho Neto (FCN-UAN), Angola</li>
-                        <li>Mestrado em andamento - Programa de Pós-Graduação de Física da Universidade Federal de São Paulo (PPG-fisicaunifesp), Brasil</li>
+                        <li>Licenciatura em Física - Faculdade de Ciências Naturais da Universidade Agostinho Neto
+                            (FCN-UAN), Angola</li>
+                        <li>Mestrado em andamento - Programa de Pós-Graduação de Física da Universidade Federal de São
+                            Paulo (PPG-fisicaunifesp), Brasil</li>
                     </ul>
-                    
+
                     <div class="research-area">
                         <strong>Linha de Pesquisa:</strong>
-                        <p>Física Nuclear com foco em investigação dos mecanismos de Reações do Sistema 10B+9Be acima da barreira de potencial de Coulomb</p>
+                        <p>Física Nuclear com foco em investigação dos mecanismos de Reações do Sistema 10B+9Be acima da
+                            barreira de potencial de Coulomb</p>
                     </div>
                 </div>
             </div>
@@ -1015,7 +1138,8 @@
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
                 <div>
                     <h3 style="color: #667eea; margin-bottom: 1.5rem;">Siga-nos no WhatsApp</h3>
-                    <p style="margin-bottom: 1.5rem;">Fique atualizado com as últimas notícias, eventos e oportunidades do CFO. Junte-se ao nosso canal:</p>
+                    <p style="margin-bottom: 1.5rem;">Fique atualizado com as últimas notícias, eventos e oportunidades
+                        do CFO. Junte-se ao nosso canal:</p>
                     <a href="https://whatsapp.com/channel/0029VbAvWGj17EmnP59IPq2C" class="cta-button" target="_blank">
                         📱 Entrar no Canal WhatsApp
                     </a>
@@ -1027,8 +1151,10 @@
                 <div>
                     <h3 style="color: #667eea; margin-bottom: 1.5rem;">Informações Gerais</h3>
                     <p><strong>💬 Todos são bem-vindos!</strong></p>
-                    <p style="margin: 1rem 0;">O CFO é um espaço inclusivo onde estudantes, profissionais e entusiastas podem aprender sobre Física em um ambiente colaborativo e acessível.</p>
-                    <p style="margin: 1rem 0;"><strong>📧 Dúvidas?</strong> Entre em contato conosco através do nosso canal WhatsApp!</p>
+                    <p style="margin: 1rem 0;">O CFO é um espaço inclusivo onde estudantes, profissionais e entusiastas
+                        podem aprender sobre Física em um ambiente colaborativo e acessível.</p>
+                    <p style="margin: 1rem 0;"><strong>📧 Dúvidas?</strong> Entre em contato conosco através do nosso
+                        canal WhatsApp!</p>
                 </div>
             </div>
         </div>
@@ -1038,53 +1164,70 @@
     <section id="apoios" style="padding: 4rem 0; background: linear-gradient(135deg, #f0f4ff 0%, #e8ecff 100%);">
         <div class="container">
             <h2 style="text-align: center; color: #1e3c72;">🤝 Apoios e Patrocínios</h2>
-            
+
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 2rem;">
                 <!-- Apoios -->
-                <div style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);">
+                <div
+                    style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);">
                     <h3 style="color: #667eea; margin-bottom: 1.5rem; text-align: center; font-size: 1.3rem;">
                         📌 Instituições Apoiadoras
                     </h3>
                     <div style="display: flex; flex-direction: column; gap: 1rem;">
-                        <div style="padding: 1rem; background-color: #f0f4ff; border-left: 4px solid #667eea; border-radius: 5px;">
+                        <div
+                            style="padding: 1rem; background-color: #f0f4ff; border-left: 4px solid #667eea; border-radius: 5px;">
                             <div style="font-weight: bold; color: #667eea;">🔬 HTC-NSASN</div>
-                            <div style="font-size: 0.9rem; color: #666; margin-top: 0.3rem;">High Technology Science for New School Academic Science Nature</div>
+                            <div style="font-size: 0.9rem; color: #666; margin-top: 0.3rem;">High Technology Science for
+                                New School Academic Science Nature</div>
                         </div>
-                        <div style="padding: 1rem; background-color: #f0f4ff; border-left: 4px solid #667eea; border-radius: 5px;">
+                        <div
+                            style="padding: 1rem; background-color: #f0f4ff; border-left: 4px solid #667eea; border-radius: 5px;">
                             <div style="font-weight: bold; color: #667eea;">🌍 SYHC, Lda</div>
-                            <div style="font-size: 0.9rem; color: #666; margin-top: 0.3rem;">The Science in Your Hands Company, limitada</div>
+                            <div style="font-size: 0.9rem; color: #666; margin-top: 0.3rem;">The Science in Your Hands
+                                Companny, Limitada</div>
+                            <div style="font-size: 0.85rem; color: #667eea; margin-top: 0.3rem; font-style: italic;">Em cada acção uma realização</div>
                         </div>
-                        <div style="padding: 1rem; background-color: #f0f4ff; border-left: 4px solid #667eea; border-radius: 5px;">
+                        <div
+                            style="padding: 1rem; background-color: #f0f4ff; border-left: 4px solid #667eea; border-radius: 5px;">
                             <div style="font-weight: bold; color: #667eea;">🎓 FCN-UAN</div>
-                            <div style="font-size: 0.9rem; color: #666; margin-top: 0.3rem;">Faculdade de Ciências Naturais da Universidade Agostinho Neto</div>
+                            <div style="font-size: 0.9rem; color: #666; margin-top: 0.3rem;">Faculdade de Ciências
+                                Naturais da Universidade Agostinho Neto</div>
                         </div>
-                        <div style="padding: 1rem; background-color: #f0f4ff; border-left: 4px solid #667eea; border-radius: 5px;">
+                        <div
+                            style="padding: 1rem; background-color: #f0f4ff; border-left: 4px solid #667eea; border-radius: 5px;">
                             <div style="font-weight: bold; color: #667eea;">🏫 PPG-fisicaunifesp</div>
-                            <div style="font-size: 0.9rem; color: #666; margin-top: 0.3rem;">Programa de Pós-Graduação de Física da Universidade Federal de São Paulo</div>
+                            <div style="font-size: 0.9rem; color: #666; margin-top: 0.3rem;">Programa de Pós-Graduação
+                                de Física da Universidade Federal de São Paulo</div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Patrocinadora -->
-                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); color: white;">
+                <div
+                    style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); color: white;">
                     <h3 style="margin-bottom: 1.5rem; text-align: center; font-size: 1.3rem; color: #ffd700;">
                         ⭐ Patrocinadora
                     </h3>
-                    <div style="background-color: rgba(255, 255, 255, 0.1); padding: 2rem; border-radius: 10px; border: 2px solid #ffd700; text-align: center;">
-                        <div style="font-weight: bold; font-size: 1.3rem; color: #ffd700; margin-bottom: 0.5rem;">SYHC, Lda</div>
+                    <div
+                        style="background-color: rgba(255, 255, 255, 0.1); padding: 2rem; border-radius: 10px; border: 2px solid #ffd700; text-align: center;">
+                        <div style="font-weight: bold; font-size: 1.3rem; color: #ffd700; margin-bottom: 0.5rem;">SYHC,
+                            Lda</div>
                         <div style="font-size: 0.95rem; color: #e8ecff; line-height: 1.6;">
-                            <p style="margin-bottom: 0.8rem;">Sociedade de Humanidades e Ciência</p>
-                            <p style="font-style: italic;">Comprometida com o desenvolvimento da educação científica e divulgação do conhecimento em Física.</p>
+                            <p style="margin-bottom: 0.8rem;">The Science in Your Hands Companny, Limitada</p>
+                            <p style="font-style: italic; color: #ffd700; font-weight: 600; margin-bottom: 0.8rem;">Em cada acção uma realização</p>
+                            <p style="font-style: italic;">Comprometida com o desenvolvimento da educação científica e
+                                divulgação do conhecimento em Física.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Mensagem de Gratidão -->
-            <div style="margin-top: 2rem; padding: 1.5rem; background: white; border-radius: 10px; text-align: center; border-top: 4px solid #667eea;">
+            <div
+                style="margin-top: 2rem; padding: 1.5rem; background: white; border-radius: 10px; text-align: center; border-top: 4px solid #667eea;">
                 <p style="color: #333; font-size: 1rem; line-height: 1.8;">
-                    <strong style="color: #1e3c72;">O CFO agradece o apoio e patrocínio de todas estas instituições e empresas</strong>, 
-                    que tornam possível a realização de nossas atividades de divulgação científica, 
+                    <strong style="color: #1e3c72;">O CFO agradece o apoio e patrocínio de todas estas instituições e
+                        empresas</strong>,
+                    que tornam possível a realização de nossas atividades de divulgação científica,
                     contribuindo para a educação em Física de qualidade e acessível a todos.
                 </p>
                 <p style="color: #667eea; margin-top: 1rem; font-weight: bold;">
@@ -1112,7 +1255,8 @@
                 <div class="footer-section">
                     <h3>Siga-nos</h3>
                     <div class="social-links">
-                        <a href="https://whatsapp.com/channel/0029VbAvWGj17EmnP59IPq2C" target="_blank" title="WhatsApp">💬</a>
+                        <a href="https://whatsapp.com/channel/0029VbAvWGj17EmnP59IPq2C" target="_blank"
+                            title="WhatsApp">💬</a>
                     </div>
                 </div>
             </div>
@@ -1124,6 +1268,24 @@
     <script>
         // Função para simular download de cartazes
         function downloadPoster(posterNumber) {
+            // Para os posters de imagem (palestras)
+            const imagePosters = {
+                7: 'imagens/Michele-Lara.png',
+                8: 'imagens/Marlete-Assuncao.png',
+                9: 'imagens/Leonardo-Sioufi.png',
+                10: 'imagens/Ronaldo-Savarino.png',
+                11: 'imagens/Psar-Serghei-Nanotecnologia.png'
+            };
+
+            if (imagePosters[posterNumber]) {
+                const link = document.createElement('a');
+                link.href = imagePosters[posterNumber];
+                link.download = `CFO-Palestra-${posterNumber}.png`;
+                link.click();
+                alert('Cartaz baixado! Compartilhe nas redes sociais 📢');
+                return;
+            }
+
             const posters = {
                 1: {
                     title: 'CFO - Centro Online de Física',
@@ -1216,7 +1378,7 @@
 
         // Suavidade ao rolar a página
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
@@ -1224,5 +1386,7 @@
                 }
             });
         });
-    </script></body>
+    </script>
+</body>
+
 </html>

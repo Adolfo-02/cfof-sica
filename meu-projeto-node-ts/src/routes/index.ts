@@ -1,8 +1,10 @@
-import { Router } from 'express';
-import { someControllerFunction } from '../controllers/index';
+import { Application } from 'express';
+import { someControllerFunction, exampleMethod } from '../controllers';
 
-const router = Router();
-
-router.get('/endpoint', someControllerFunction);
-
-export default router;
+export const setupRoutes = (app: Application): void => {
+    app.get('/api/endpoint', someControllerFunction);
+    app.get('/api/example', exampleMethod);
+    app.get('/api/health', (req, res) => {
+        res.json({ status: 'ok' });
+    });
+};
